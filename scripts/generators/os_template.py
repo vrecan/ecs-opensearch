@@ -1,3 +1,4 @@
+from copy import deepcopy
 from typing import (
     Dict,
 )
@@ -16,6 +17,7 @@ OPENSEARCH_REMAP = {
     'wildcard': 'keyword',
     'flattened': 'object',
     'version': 'keyword',
+    'match_only_text': 'text',
 }
 
 
@@ -49,6 +51,13 @@ def generate_legacy_template_version(
 ) -> None:
     ecs_helpers.make_dirs(join(out_dir, 'opensearch'))
     template: Dict = template_settings(ecs_version, mappings_section, template_settings_file, is_legacy=True)
+    # remove order as this is not supported in opensearch
+    template.pop('order')
+    template.setdefault('template', {})
+    copies = ['mappings', 'settings']
+    for cp in copies:
+        template['template'][cp] = deepcopy(template[cp])
+        del template[cp]
 
     filename: str = join(out_dir, "opensearch/template.json")
     save_json(filename, template)
@@ -60,3 +69,8 @@ def opensearch_remap_field_type(
     if field['type'] in OPENSEARCH_REMAP:
         typ = field['type']
         field['type'] = OPENSEARCH_REMAP[typ]
+
+    if 'multi_fields' in field:
+        for multi_field in field['multi_fields']:
+            typ = multi_field['type']
+            multi_field['type'] = OPENSEARCH_REMAP[typ]
