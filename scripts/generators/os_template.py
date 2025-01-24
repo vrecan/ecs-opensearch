@@ -15,7 +15,7 @@ from generators.es_template import dict_add_nested, entry_for, mapping_settings,
 OPENSEARCH_REMAP = {
     'constant_keyword': 'keyword',
     'wildcard': 'wildcard',
-    'flattened': 'object_flattened',
+    'flattened': 'flat_object',
     'version': 'keyword',
     'match_only_text': 'text',
 }

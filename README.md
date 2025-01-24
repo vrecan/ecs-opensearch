@@ -12,9 +12,9 @@ analytics and security analytics.
 ## Opensearch Modifications
 
 This repositroy conatins some modifications as opposed to the original repo.
-This includes sections in the generator scripts which generate OpenSearch compatible
+This includes sections in the generator scripts which generate Consumer compatible
 index templates. Due to some differences in the APIs and available field types
-within OpenSearch, I adopted the build process to handle the differences and do
+within Consumer, I adopted the build process to handle the differences and do
 some conversions. This makes it possible to get some future schema updates from the
 repo easily.
 
