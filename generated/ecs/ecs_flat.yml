@@ -50924,3 +50924,135 @@ vulnerability.severity:
   normalize: []
   short: Severity of the vulnerability.
   type: keyword
+Stat.phishing_course.id:
+  dashed_name: stat-phishing-course-id
+  description: 'Unique identifier for the phishing course.'
+  example: "12345"
+  flat_name: Stat.phishing_course.id
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.id
+  normalize: []
+  short: Phishing course ID.
+  type: keyword
+Stat.phishing_course.name:
+  dashed_name: stat-phishing-course-name
+  description: 'The name of the phishing course.'
+  example: "Phishing Awareness 101"
+  flat_name: Stat.phishing_course.name
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.name
+  normalize: []
+  short: Phishing course name.
+  type: keyword
+Stat.phishing_course.description:
+  dashed_name: stat-phishing-course-description
+  description: 'A brief description of the phishing course content.'
+  example: "An introductory course on phishing awareness."
+  flat_name: Stat.phishing_course.description
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.description
+  normalize: []
+  short: Phishing course description.
+  type: text
+Stat.phishing_course.due_date:
+  dashed_name: stat-phishing-course-due-date
+  description: 'The due date by which the phishing course must be completed.'
+  example: "2024-01-31"
+  flat_name: Stat.phishing_course.due_date
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.due_date
+  normalize: []
+  short: Phishing course due date.
+  type: date
+Stat.phishing_course.completion_date:
+  dashed_name: stat-phishing-course-completion-date
+  description: 'The date the phishing course was completed.'
+  example: "2024-01-15"
+  flat_name: Stat.phishing_course.completion_date
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.completion_date
+  normalize: []
+  short: Phishing course completion date.
+  type: date
+Stat.phishing_course.created_date:
+  dashed_name: stat-phishing-course-created-date
+  description: 'The date the phishing course was created.'
+  example: "2023-12-01"
+  flat_name: Stat.phishing_course.created_date
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.created_date
+  normalize: []
+  short: Phishing course created date.
+  type: date
+Stat.phishing_course.status_value:
+  dashed_name: stat-phishing-course-status-value
+  description: 'The current status value of the phishing course.'
+  example: "Completed"
+  flat_name: Stat.phishing_course.status_value
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.status_value
+  normalize: []
+  short: Phishing course status.
+  type: keyword
+Stat.phishing_course.type:
+  dashed_name: stat-phishing-course-type
+  description: 'The type or category of the phishing course.'
+  example: "Awareness"
+  flat_name: Stat.phishing_course.type
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.type
+  normalize: []
+  short: Phishing course type.
+  type: keyword
+Stat.phishing_course.content_type:
+  dashed_name: stat-phishing-course-content-type
+  description: 'The type of content included in the phishing course.'
+  example: "Video"
+  flat_name: Stat.phishing_course.content_type
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.content_type
+  normalize: []
+  short: Phishing course content type.
+  type: keyword
+Stat.phishing_course.expiration_date:
+  dashed_name: stat-phishing-course-expiration-date
+  description: 'The expiration date of the phishing course.'
+  example: "2025-01-01"
+  flat_name: Stat.phishing_course.expiration_date
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.expiration_date
+  normalize: []
+  short: Phishing course expiration date.
+  type: date
+Stat.phishing_course.enrolled_date:
+  dashed_name: stat-phishing-course-enrolled-date
+  description: 'The date the user enrolled in the phishing course.'
+  example: "2023-12-15"
+  flat_name: Stat.phishing_course.enrolled_date
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.enrolled_date
+  normalize: []
+  short: Phishing course enrolled date.
+  type: date
+Stat.phishing_course.started:
+  dashed_name: stat-phishing-course-started
+  description: 'Indicates whether the phishing course has been started.'
+  example: "true"
+  flat_name: Stat.phishing_course.started
+  ignore_above: 1024
+  level: extended
+  name: phishing_course.started
+  normalize: []
+  short: Phishing course started flag.
+  type: boolean
