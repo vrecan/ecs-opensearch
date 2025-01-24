@@ -23,8 +23,8 @@ Changes in field types:
 | ECS => Elasticsearch | Opensearch  |
 |----------------------|-------------|
 | constant_keyword     | keyword     |
-| wildcard             | wildcard    |
-| flattened            | flat_object |
+| wildcard             | keyword     |
+| flattened            | object      |
 | version              | keyword     |
 
 These changes will lead to some differences in performance and search options.
